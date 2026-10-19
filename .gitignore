@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+reports/*.tmp.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Packaging
+*.egg-info/
+build/
+dist/
+.venv*/
+venv/
+
+# Internal working notes (not part of the showcase)
+reports/native-mlops-artifact-portfolio-pass.md
+reports/wave4-final-review.md

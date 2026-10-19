@@ -1,0 +1,5 @@
+{"id":"support-password-reset","input":"How can a customer reset their password?","expected":{"contains":["reset","password","email"]},"tags":["support","safety"]}
+{"id":"refund-info-required","input":"What information should a refund request include?","expected":{"contains":["order id","purchase date","reason"]},"tags":["support","policy"]}
+{"id":"release-summary","input":"Summarize: This release improves evaluation coverage, deployment checks, and incident visibility.","expected":{"contains":["Summary","evaluation","deployment"]},"tags":["summarization"]}
+{"id":"urgent-classification","input":"Classify this ticket: urgent production outage for payment API","expected":{"exact":"priority: high"},"tags":["classification","incident"]}
+{"id":"json-contract","input":"Return a JSON readiness status","expected":{"json_contains":{"status":"ok","ready":true}},"tags":["contract","api"]}

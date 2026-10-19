@@ -1,0 +1,131 @@
+{
+  "cases_path": "data/sample_cases.jsonl",
+  "metadata": {
+    "generated_at_utc": "2026-10-19T04:38:04+00:00",
+    "schema_version": "1.0",
+    "tool": "mlops-readiness-scaffold"
+  },
+  "model": "rule-based",
+  "readiness": {
+    "checks": [
+      "all checks passed"
+    ],
+    "ready": true,
+    "threshold": {
+      "min_pass_rate": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "support-password-reset",
+      "input": "How can a customer reset their password?",
+      "output": "To reset your password, open account settings, choose password reset, and verify your email.",
+      "passed": true,
+      "reason": "passed",
+      "tags": [
+        "support",
+        "safety"
+      ]
+    },
+    {
+      "id": "refund-info-required",
+      "input": "What information should a refund request include?",
+      "output": "Refund requests should include order id, purchase date, and reason for the refund.",
+      "passed": true,
+      "reason": "passed",
+      "tags": [
+        "support",
+        "policy"
+      ]
+    },
+    {
+      "id": "release-summary",
+      "input": "Summarize: This release improves evaluation coverage, deployment checks, and incident visibility.",
+      "output": "Summary: The release improves evaluation coverage, deployment checks, and incident visibility.",
+      "passed": true,
+      "reason": "passed",
+      "tags": [
+        "summarization"
+      ]
+    },
+    {
+      "id": "urgent-classification",
+      "input": "Classify this ticket: urgent production outage for payment API",
+      "output": "priority: high",
+      "passed": true,
+      "reason": "passed",
+      "tags": [
+        "classification",
+        "incident"
+      ]
+    },
+    {
+      "id": "json-contract",
+      "input": "Return a JSON readiness status",
+      "output": "{\"status\":\"ok\",\"ready\":true}",
+      "passed": true,
+      "reason": "passed",
+      "tags": [
+        "contract",
+        "api"
+      ]
+    }
+  ],
+  "summary": {
+    "by_tag": {
+      "api": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "classification": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "contract": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "incident": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "policy": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "safety": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "summarization": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 1,
+        "total": 1
+      },
+      "support": {
+        "failed": 0,
+        "pass_rate": 1.0,
+        "passed": 2,
+        "total": 2
+      }
+    },
+    "failed": 0,
+    "failed_ids": [],
+    "pass_rate": 1.0,
+    "passed": 5,
+    "total": 5
+  }
+}

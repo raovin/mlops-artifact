@@ -1,0 +1,6 @@
+{
+  "cases": "data/sample_cases.jsonl",
+  "model": "rule-based",
+  "min_pass_rate": 1.0,
+  "output": "reports/readiness-report.json"
+}
